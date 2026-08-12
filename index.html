@@ -87,7 +87,7 @@
     border:3px solid transparent;
     margin-bottom:22px;
   }
-  .mono img{
+  .mono img, .mono picture{
     width:100%;height:100%;object-fit:cover;display:block;
   }
 
@@ -196,7 +196,12 @@
       <button data-lang="ar">ع</button>
     </div>
 
-    <div class="mono" id="mono"><img src="avatar.webp" alt="Ahmad Ahmad"></div>
+    <div class="mono" id="mono">
+      <picture>
+        <source srcset="avatar.webp" type="image/webp">
+        <img src="avatar.jpg" alt="Ahmad Ahmad" width="88" height="88" loading="eager" decoding="async">
+      </picture>
+    </div>
     <h1 class="name" id="name">Ahmad Ahmad</h1>
     <div class="rule"></div>
     <p class="bio" id="bio">Here you will find my social media links ✅</p>
